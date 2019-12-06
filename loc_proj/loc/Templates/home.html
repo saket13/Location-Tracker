@@ -2,13 +2,15 @@
 {% block content %}
     {%for location in posts%}
           <article class="media content-section">
-          <div class="media-body">
+          <img class="rounded-circle article-img" src="{{url_for('static',filename='profile_pics/'+location.author.image_file)}}">
+          <div class="media-body" >
           <div class="article-metadata">
-            <a class="mr-2" href="#">{{ location.user }}</a>
-            <small class="text-muted">{{ location.date}}</small>
+            <a class="mr-2" href="#">{{ location.author.username}}</a>
+            <small class="text-muted">{{ location.date.strftime('%d/%m/%Y, %H:%M:%S')}}</small>
             </div>
             <h2><a class="article-title" href="https://www.google.com/maps/place/IIITM+Campus,+Gwalior,+Madhya+Pradesh/@26.2501499,78.1682148,16z/data=!3m1!4b1!4m5!3m4!1s0x3976c6e433ba5e05:0xf552a3a67fac5034!8m2!3d26.2486521!4d78.1749687">{{ location.loc }}</a></h2>
             <p class="article-content">{{ location.message }}</p>
+
           </div>
         </article>
         
