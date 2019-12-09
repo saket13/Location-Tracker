@@ -4,6 +4,21 @@ This project was made by me as a part of the Software Engineering(SE) project in
 IP address of the user to track location and all the other users registered can see the shared location along with the message
 and the date and time of message logging.
 
+## How It Looks Like
+
+### HomePage
+![](imgs/homepage.png)
+### Register
+![](imgs/register.png)
+### Login
+![](imgs/login.png)
+### Account 
+![](imgs/account.png)
+### Share Location(With Msg)
+![](imgs/share_loc.png)
+
+
+
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
